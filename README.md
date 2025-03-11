@@ -1,64 +1,65 @@
-# Regressão Logística para Predição de Doenças Cardíacas
+# Logistic Regression for Heart Disease Prediction
 
-Este projeto utiliza **Regressão Logística** para prever a presença de doenças cardíacas com base em dados clínicos. Este é o meu **primeiro modelo de classificação** e faz parte da minha jornada na área de ciência de dados.
+This project uses **Logistic Regression** to predict the presence of heart disease based on clinical data. This is my **first classification model** and is part of my journey in the data science field.
 
-## Descrição do Projeto
+## Project Description
 
-O objetivo principal foi desenvolver um modelo capaz de prever se um paciente tem ou não uma doença cardíaca com base em variáveis como idade, pressão arterial, níveis de colesterol, entre outras.
+The main goal was to develop a model capable of predicting whether a patient has heart disease or not based on variables such as age, blood pressure, cholesterol levels, among others.
 
-## Conjunto de Dados
-O dataset utilizado contém **303 registros** com **14 atributos**, incluindo:
-- Idade
-- Sexo
-- Pressão arterial em repouso
-- Colesterol
-- Frequência cardíaca máxima
-- Angina induzida por exercício
-- Entre outras variáveis clínicas
+## Dataset
 
-A variável alvo é a coluna `target`, que indica:
-- **1:** Doença cardíaca presente
-- **0:** Doença cardíaca ausente
+The dataset used contains **303 records** with **14 attributes**, including:
+- Age
+- Sex
+- Resting blood pressure
+- Cholesterol
+- Maximum heart rate
+- Exercise-induced angina
+- And other clinical variables
 
-## Tecnologias Utilizadas
+The target variable is the `target` column, which indicates:
+- **1:** Heart disease present
+- **0:** Heart disease absent
+
+## Technologies Used
 - **Python**
-- **Pandas** (manipulação de dados)
-- **NumPy** (operações numéricas)
-- **Scikit-learn** (modelo de regressão logística e métricas)
-- **Matplotlib** & **Seaborn** (visualização de dados)
+- **Pandas** (data manipulation)
+- **NumPy** (numerical operations)
+- **Scikit-learn** (logistic regression model and metrics)
+- **Matplotlib** & **Seaborn** (data visualization)
 
-## Etapas do Projeto
-1. **Análise Exploratória dos Dados**
-   - Visualização das variáveis
-   - Verificação de dados faltantes (nenhum valor ausente foi encontrado)
+## Project Steps
+1. **Exploratory Data Analysis**
+   - Visualization of variables
+   - Checking for missing data (no missing values were found)
   
-2. **Pré-processamento**
-   - Padronização das variáveis numéricas usando `StandardScaler`
-   - Separação entre features e variável alvo
+2. **Preprocessing**
+   - Standardization of numeric variables using `StandardScaler`
+   - Separation of features and target variable
 
-3. **Divisão dos Dados**
-   - Separação em conjunto de treino (90%) e teste (10%) com `train_test_split`
+3. **Data Splitting**
+   - Split into training (90%) and testing (10%) sets using `train_test_split`
   
-4. **Treinamento do Modelo**
-   - Utilização do modelo **LogisticRegression** do Scikit-learn
+4. **Model Training**
+   - Use of the **LogisticRegression** model from Scikit-learn
 
-5. **Avaliação**
-   - Matriz de Confusão
-   - Relatório de Classificação (Precision, Recall, F1-Score)
-   - Acurácia
+5. **Evaluation**
+   - Confusion Matrix
+   - Classification Report (Precision, Recall, F1-Score)
+   - Accuracy
 
-## Resultados
-O modelo apresentou bons resultados para um primeiro projeto, destacando:
-- Acurácia: **85%**
+## Results
+The model presented good results for a first project, highlighting:
+- Accuracy: **85%**
 - F1-Score: **84%**
-- Curva ROC indicando boa capacidade de separação entre classes
+- ROC Curve indicating good class separation capability
 
-## Melhorias Futuras
-- Validação cruzada para uma avaliação mais robusta
-- Implementação de técnicas para lidar com classes desbalanceadas
-- Ajuste de hiperparâmetros para melhorar a performance
-- Comparação com outros algoritmos de classificação (Random Forest, SVM)
+## Future Improvements
+- Cross-validation for more robust evaluation
+- Implementation of techniques to handle imbalanced classes
+- Hyperparameter tuning to improve performance
+- Comparison with other classification algorithms (Random Forest, SVM)
 
 ---
 
-Este projeto marca o início da minha jornada na área de Ciência de Dados. Fique à vontade para contribuir ou deixar sugestões! 😊
+This project marks the beginning of my journey in the field of Data Science. Feel free to contribute or leave suggestions! 😊
